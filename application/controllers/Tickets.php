@@ -5,7 +5,9 @@ class Tickets extends CI_Controller {
 
 	
 	public function nuevo()
-	{
+	{	
+		$this->load->view('header');
 		$this->load->view('tickets/nuevo');
+		$this->load->view('footer');
 	}
 }
