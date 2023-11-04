@@ -47,3 +47,8 @@
 <?php else: ?>
   <h1>No hay datos</h1>
 <?php endif; ?>  
+
+<script type="text/javascript">
+    $("#tbl_clientes")
+    .DataTable();
+</script>
