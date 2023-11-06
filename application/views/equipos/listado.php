@@ -8,11 +8,7 @@
         <tr>
           <th>ID</th>
           <th>NOMBRE</th>
-          <th>APELLIDO</th>
-          <th>CEDULA</th>
-          <th>DIRECCION</th>
-          <th>CORREO</th>
-          <th>TELEFONO</th>
+          <th>PLANTILLA</th>
           <th>ACCIONES</th>
 
         </tr>
@@ -21,20 +17,17 @@
        <?php foreach ($equipos as $filaTemporal ): ?>
          <tr>
 
-             <td class="text-center"> <?php echo $filaTemporal->id_cli ?></td>
-             <td> <?php echo $filaTemporal->nombre_cli ?></td>
-             <td> <?php echo $filaTemporal->apellido_cli ?></td>
-             <td> <?php echo $filaTemporal->cedula_cli?></td>
-             <td> <?php echo $filaTemporal->direccion_cli ?></td>
-             <td> <?php echo $filaTemporal->correo_cli?></td>
-             <td> <?php echo $filaTemporal->telefono_cli ?></td>
+             <td class="text-center"> <?php echo $filaTemporal->id_equi ?></td>
+             <td> <?php echo $filaTemporal->nombre_equi ?></td>
+             <td> <?php echo $filaTemporal->plantilla_equi ?></td>
+
              <td class="text-center">
-               <a href="<?php echo site_url(); ?>/equipos/editar/<?php echo $filaTemporal->id_cli; ?>" title="Editar equipo" >
+               <a href="<?php echo site_url(); ?>/equipos/editar/<?php echo $filaTemporal->id_equi; ?>" title="Editar equipo" >
                  <i class="mdi  mdi-pencil">Editar</i>
                </a>
               &nbsp;&nbsp;
 
-                <a href="<?php echo site_url(); ?>/equipos/eliminar/<?php echo $filaTemporal->id_cli; ?>" title="Borrar equipo" style="color:red" onclick="return confirm('Esta seguro de borra el registro?');">
+                <a href="<?php echo site_url(); ?>/equipos/eliminar/<?php echo $filaTemporal->id_equi; ?>" title="Borrar equipo" style="color:red" onclick="return confirm('Esta seguro de borra el registro?');">
                   <i class="mdi  mdi-close">Eliminar</i>
                 </a>
              </td>
