@@ -14,8 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -61,17 +61,17 @@
                         <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
-                    
+
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="<?php echo site_url("") ?>" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Inicio</a>
-                    
+
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>CLIENTES</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="<?php echo site_url("clientes/nuevo") ?>" class="dropdown-item">NUEVO</a>
                             <a href="<?php echo site_url("clientes/listado") ?>" class="dropdown-item">LISTADO</a>
-                            
+
                         </div>
                     </div>
 					<div class="nav-item dropdown">
@@ -79,11 +79,20 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="<?php echo site_url("tickets/nuevo") ?>" class="dropdown-item">NUEVO</a>
                             <a href="<?php echo site_url("tickets/listado") ?>" class="dropdown-item">LISTADO</a>
-                            
+
                         </div>
                     </div>
-                    
-                   
+
+                    <div class="nav-item dropdown">
+                                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-estadio me-2"></i>ESTADIO</a>
+                                  <div class="dropdown-menu bg-transparent border-0">
+                                      <a href="<?php echo site_url("tickets/nuevo") ?>" class="dropdown-item">NUEVO</a>
+                                      <a href="<?php echo site_url("tickets/listado") ?>" class="dropdown-item">LISTADO</a>
+
+                                  </div>
+                              </div>
+
+
                 </div>
             </nav>
         </div>
@@ -105,7 +114,7 @@
                 </form>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
-                        
+
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
@@ -140,9 +149,8 @@
                             <a href="#" class="dropdown-item text-center">See all message</a>
                         </div>
                     </div>
-                   
-                    
+
+
                 </div>
             </nav>
             <!-- Navbar End -->
-
