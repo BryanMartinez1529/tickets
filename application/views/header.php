@@ -86,8 +86,8 @@
                     <div class="nav-item dropdown">
                                   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-estadio me-2"></i>ESTADIO</a>
                                   <div class="dropdown-menu bg-transparent border-0">
-                                      <a href="<?php echo site_url("tickets/nuevo") ?>" class="dropdown-item">NUEVO</a>
-                                      <a href="<?php echo site_url("tickets/listado") ?>" class="dropdown-item">LISTADO</a>
+                                      <a href="<?php echo site_url("estadios/nuevo") ?>" class="dropdown-item">NUEVO</a>
+                                      <a href="<?php echo site_url("estadios/listado") ?>" class="dropdown-item">LISTADO</a>
 
                                   </div>
                               </div>
