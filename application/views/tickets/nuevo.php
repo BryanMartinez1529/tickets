@@ -36,14 +36,19 @@
 
                               </div>
                               <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Cedula de cliente</label>
+                                        <input type="text" name="cedula_cli" class="form-control" placeholder="Ingrese la cedula del cliente" id="cedula_cli" required>
+                                    </div>
+                                    <div class="col-md-4">
                                         <label for="" class="form-label">Nombre del Equipo</label>
                                         <input type="text" name="nombre_equipo" class="form-control" placeholder="Ingrese el Nombre del Equipo" id="nombre_equipo" required>
                                     </div>
-                                    <div class="6">
+                                    <div class="col-md-4">
                                     <label for="" class="form-label">Nombre Estadio</label>
                                         <input type="text" name="nombre_estadio" class="form-control" placeholder="Ingrese el Nombre del Estadio" id="nombre_estadio" required>
                                     </div>
+                                    
                               </div>
                               <div class="row">
                                 <button type="submit" class="btn btn-dark m-2">Guardar</button>

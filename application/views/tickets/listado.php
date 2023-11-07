@@ -12,6 +12,7 @@
           <th>FECHA</th>
           <th>ASIENTO</th>
           <th>PUERTAS DE INGRESO</th>
+          <th>CEDULA</th>
           <th>NOMBRE DEL EQUIPO</th>
           <th>NOMBRE DEL ESTADIO</th>
           <th>ACCIONES</th>
@@ -28,6 +29,7 @@
              <td> <?php echo $filaTemporal->fecha_ticket?></td>
              <td> <?php echo $filaTemporal->asiento_ticket ?></td>
              <td> <?php echo $filaTemporal->puerta_ingreso ?></td>
+             <td> <?php echo $filaTemporal->cedula_cli ?></td>
              <td> <?php echo $filaTemporal->nombre_equipo ?></td>
              <td> <?php echo $filaTemporal->nombre_estadio ?></td>
 

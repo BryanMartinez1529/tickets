@@ -41,8 +41,9 @@ class Tickets  extends CI_Controller {
             "fecha_ticket"=>$this->input->post('fecha_ticket'),
             "asiento_ticket"=>$this->input->post('asiento_ticket'),
             "puerta_ingreso"=>$this->input->post('puerta_ingreso'),
-			"nombre_equipo"=>$this->input->post('nombre_equipo'),
-		    "nombre_estadio"=>$this->input->post('nombre_estadio')
+            "cedula_cli"=>$this->input->post('cedula_cli'),
+			      "nombre_equipo"=>$this->input->post('nombre_equipo'),
+		        "nombre_estadio"=>$this->input->post('nombre_estadio'),
 
         );
 
@@ -75,8 +76,9 @@ class Tickets  extends CI_Controller {
           "fecha_ticket"=>$this->input->post('fecha_ticket'),
           "asiento_ticket"=>$this->input->post('asiento_ticket'),
           "puerta_ingreso"=>$this->input->post('puerta_ingreso'),
-		  "nombre_equipo"=>$this->input->post('nombre_equipo'),
-		  "nombre_estadio"=>$this->input->post('nombre_estadio')
+          "cedula_cli"=>$this->input->post('cedula_cli'),
+		      "nombre_equipo"=>$this->input->post('nombre_equipo'),
+		      "nombre_estadio"=>$this->input->post('nombre_estadio')
         );
 
         $id_ticket=$this->input->post("id_ticket");
