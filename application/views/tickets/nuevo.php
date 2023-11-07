@@ -7,7 +7,7 @@
 <div class="row g-3">
                     <div class="col-sm-12 col-xl-12">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Basic Form</h6>
+                            <h6 class="mb-4">Formulario</h6>
                             <form method="post" action="<?php echo site_url("/tickets/guardar"); ?>" id="frm_nuevo_ticket">
                               <div class="row">
                                 <div class="col-md-4">
@@ -20,18 +20,18 @@
                                 </div>
                                 <div class="col-md-4">
                                         <label for="" class="form-label">Fecha</label>
-                                        <input type="number" name="fecha_ticket" class="form-control" placeholder="Ingrese la fecha" id="fecha_ticket" required>
+                                        <input type="text"  name="fecha_ticket" class="form-control" placeholder="Ingrese la fecha" id="fecha_ticket" required>
                                     </div>
                               </div>
                               <div class="row">
 
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <label for="" class="form-label">Asiento</label>
-                                        <input type="text" name="asiento_ticket" class="form-control" placeholder="Ingrese el asiento" id="asiento_ticket" required>
+                                        <input type="text" name="asiento_ticket" class="form-control" placeholder="Ingrese el asiento disponible" id="asiento_ticket" required>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <label for="" class="form-label">Puerta de ingreso</label>
-                                        <input type="number" name="puerta_ingreso" class="form-control" placeholder="numero de puerta de acceso" id="puerta_ingreso" required>
+                                        <input type="number" name="puerta_ingreso" class="form-control" placeholder="Ingrese el número de puerta de acceso" id="puerta_ingreso" required>
                                     </div>
 
                               </div>
@@ -40,7 +40,7 @@
                                         <label for="" class="form-label">Nombre Equipo</label>
                                         <input type="text" name="nombre_equipo" class="form-control" placeholder="Ingrese el Nombre del Equipo" id="nombre_equipo" required>
                                     </div>
-                                    <div class="6">
+                                    <div class="col-md-6">
                                     <label for="" class="form-label">Nombre Estadio</label>
                                         <input type="text" name="nombre_estadio" class="form-control" placeholder="Ingrese el Nombre del Estadio" id="nombre_estadio" required>
                                     </div>

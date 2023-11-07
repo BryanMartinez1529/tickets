@@ -7,7 +7,7 @@
 <div class="row g-3">
                     <div class="col-sm-12 col-xl-12">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Basic Form</h6>
+                            <h6 class="mb-4">Formulario</h6>
                             <form method="post" action="<?php echo site_url("/estadios/guardar"); ?>" id="frm_nuevo_estadio">
                               <div class="row">
                                 <div class="col-md-4">
@@ -31,7 +31,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Puerta de ingreso</label>
-                                        <input type="number" name="puertas_ingreso_est" class="form-control" placeholder="numero de peurta de acceso" id="puertas_ingreso_est" required>
+                                        <input type="number" name="puertas_ingreso_est" class="form-control" placeholder="Ingrese el numero de puerta de acceso" id="puertas_ingreso_est" required>
                                     </div>
 
                               </div>
