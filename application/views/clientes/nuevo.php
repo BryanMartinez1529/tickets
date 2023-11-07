@@ -11,7 +11,7 @@
                             <form method="post" action="<?php echo site_url("/clientes/guardar"); ?>" id="frm_nuevo_cliente">
                               <div class="row">
                                 <div class="col-md-4">
-                                    <label for="" class="form-label">Nombre</label>
+                                    <label for="" class="form-label">Nombres</label>
                                     <input type="text"  name="nombre_cli" class="form-control" placeholder="Ingrese su nombre" id="nombre_cli" required>
                                 </div>
                                 <div class="col-md-4">
@@ -22,9 +22,9 @@
                                         <label for="" class="form-label">Cedula</label>
                                         <input type="number" name="cedula_cli" class="form-control" placeholder="Ingrese su cedula" id="cedula_Cli" required>
                                     </div>
-                              </div> 
+                              </div>
                               <div class="row">
-                                    
+
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Direccion</label>
                                         <input type="text" name="direccion_cli" class="form-control" placeholder="Ingrese su direccion" id="direccion_cli" required>
@@ -41,7 +41,7 @@
                               <div class="row">
                                 <button type="submit" class="btn btn-dark m-2">Guardar</button>
                               </div>
-                              
+
                             </form>
                         </div>
  </div>
