@@ -45,8 +45,8 @@
      </tbody>
    </table>
 <?php else: ?>
-  <h1>No hay datos</h1>
-<?php endif; ?>  
+  <h1>No hay datos que mostrar</h1>
+<?php endif; ?>
 
 <script type="text/javascript">
     $("#tbl_clientes")
