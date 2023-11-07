@@ -8,10 +8,10 @@
         <tr>
           <th>ID</th>
           <th>NOMBRE ESTADIO</th>
-          <th>DIRECCION</th>
-          <th>CAPACIDAD</th>
-          <th>lOCALIDAD</th>
-          <th>PUERTAS DE INGRESO</th>
+          <th>DIRECCION DEL ESTADIO</th>
+          <th>CAPACIDAD ESTADIO</th>
+          <th>lOCALIDAD ESTADIO </th>
+          <th>PUERTAS DE INGRESO DEL ESTADIO</th>
           <th>ACCIONES</th>
 
         </tr>
