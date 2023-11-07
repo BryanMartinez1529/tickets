@@ -37,7 +37,7 @@
                               </div>
                               <div class="row">
                                     <div class="col-md-6">
-                                        <label for="" class="form-label">Nombre de los Equipo</label>
+                                        <label for="" class="form-label">Nombre del Equipo</label>
                                         <input type="text" name="nombre_equipo" class="form-control" placeholder="Ingrese el Nombre del Equipo" id="nombre_equipo" required>
                                     </div>
                                     <div class="6">

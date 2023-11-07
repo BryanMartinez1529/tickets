@@ -1,7 +1,7 @@
 <br>
 <br>
 <br>
-<h1>Editar los datos de los ticket</h1>
+<h1>Editar los datos de los ticket ingresados</h1>
 
 
 <div class="row g-3">

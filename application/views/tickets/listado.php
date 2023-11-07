@@ -12,8 +12,8 @@
           <th>FECHA</th>
           <th>ASIENTO</th>
           <th>PUERTAS DE INGRESO</th>
-          <th>NOMBRE DE EQUIPO</th>
-          <th>NOMBRE DE ESTADIO</th>
+          <th>NOMBRE DEL EQUIPO</th>
+          <th>NOMBRE DEL ESTADIO</th>
           <th>ACCIONES</th>
 
         </tr>
@@ -48,7 +48,7 @@
      </tbody>
    </table>
 <?php else: ?>
-  <h1>No hay datos existentes</h1>
+  <h1>No existen datos</h1>
 <?php endif; ?>
 
 <script type="text/javascript">
