@@ -1,7 +1,7 @@
 <br>
 <br>
 <br>
-<h1>Listado de tickets registrados</h1>
+<h1>Listado de los tickets registrados</h1>
 <?php if ($tickets): ?>
     <table class="table table-striped table-bordered table-hover" id="tbl_tickets">
      <thead>
@@ -48,7 +48,7 @@
      </tbody>
    </table>
 <?php else: ?>
-  <h1>No hay datos</h1>
+  <h1>No hay datos existentes</h1>
 <?php endif; ?>
 
 <script type="text/javascript">

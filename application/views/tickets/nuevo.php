@@ -1,7 +1,7 @@
 <br>
 <br>
 <br>
-<h1>Ingrese los datos del tickets</h1>
+<h1>Ingrese los datos de los tickets</h1>
 
 
 <div class="row g-3">
@@ -37,11 +37,11 @@
                               </div>
                               <div class="row">
                                     <div class="col-md-6">
-                                        <label for="" class="form-label">Nombre Equipo</label>
+                                        <label for="" class="form-label">Nombre de los Equipo</label>
                                         <input type="text" name="nombre_equipo" class="form-control" placeholder="Ingrese el Nombre del Equipo" id="nombre_equipo" required>
                                     </div>
                                     <div class="6">
-                                    <label for="" class="form-label">Nombre Estadio</label>
+                                    <label for="" class="form-label">Nombre del Estadio</label>
                                         <input type="text" name="nombre_estadio" class="form-control" placeholder="Ingrese el Nombre del Estadio" id="nombre_estadio" required>
                                     </div>
                               </div>
