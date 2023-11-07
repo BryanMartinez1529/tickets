@@ -35,7 +35,7 @@ class Equipos  extends CI_Controller {
 	}
 
     public function guardar(){
-        $datosNuevoCliente  = array (
+        $datosNuevoEquipo  = array (
             "nombre_equi" =>$this->input->post('nombre_equi'),
             "plantilla_equi"=>$this->input->post('plantilla_equi')
 
