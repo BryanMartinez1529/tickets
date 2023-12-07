@@ -1,7 +1,7 @@
 <br>
 <br>
 <br>
-<h1>List of registered clients</h1>
+<h1>List of registered customers</h1>
 <?php if ($customers): ?>
     <table class="table table-striped table-bordered table-hover" id="tbl_customers">
      <thead>
@@ -30,12 +30,12 @@
              <td> <?php echo $filaTemporal->phone_cli ?></td>
              <td class="text-center">
                <a href="<?php echo site_url(); ?>/customers/edit/<?php echo $filaTemporal->id_cli; ?>" title="Edit client" >
-                 <i class="mdi  mdi-pencil">Editar</i>
+                 <i class="mdi  mdi-pencil">Edit</i>
                </a>
               &nbsp;&nbsp;
 
-                <a href="<?php echo site_url(); ?>/customers/eliminar/<?php echo $filaTemporal->id_cli; ?>" title="Delete client" style="color:red" onclick="return confirm('Esta seguro de borra el registro?');">
-                  <i class="mdi  mdi-close">Eliminar</i>
+                <a href="<?php echo site_url(); ?>/customers/eliminar/<?php echo $filaTemporal->id_cli; ?>" title="Delete client" style="color:red" onclick="return confirm('Are you sure to delete this record?');">
+                  <i class="mdi  mdi-close">Delete</i>
                 </a>
              </td>
 

@@ -1,3 +1,5 @@
+
+
 <br>
 <br>
 <br>
@@ -21,6 +23,7 @@
                                 <div class="col-md-4">
                                         <label for="" class="form-label">Date</label>
                                         <input type="text"  name="date_ticket" class="form-control" placeholder="Enter the date" id="date_ticket" required>
+                                        
                                     </div>
                               </div>
                               <div class="row">
@@ -124,3 +127,9 @@
     });
 
 </script>
+
+<script type="text/javascript">
+  $( function() {
+    $( "#date_ticket" ).datepicker();
+  } );
+  </script>

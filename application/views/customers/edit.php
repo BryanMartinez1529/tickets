@@ -7,7 +7,7 @@
 <div class="row g-3">
                     <div class="col-sm-12 col-xl-12">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Formulario</h6>
+                            <h6 class="mb-4">Form</h6>
                             <form method="post" action="<?php echo site_url("/customers/procesoActualizar"); ?>" id="frm_edit_customer">
                               <input type="hidden" name="id_cli" id="id_cli" value="<?php echo $editCustomer->id_cli ?>" >
                               <div class="row">
@@ -40,7 +40,7 @@
                                     </div>
                               </div>
                               <div class="row">
-                                <button type="submit" class="btn btn-dark m-2">Guardar</button>
+                                <button type="submit" class="btn btn-dark m-2">Save</button>
                               </div>
 
                             </form>
