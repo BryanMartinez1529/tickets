@@ -1,5 +1,5 @@
 <?php
-  class Estadio extends CI_Model
+  class Stadium extends CI_Model
   {
 
     function __construct()
@@ -11,10 +11,10 @@
         return $this->db->insert('estadio',$datos);
     }
 
-    function obtenerEstadio(){
-        $listadoEstadio=$this->db->get('estadio');
-        if ($listadoEstadio->num_rows()>0){
-            return $listadoEstadio->result();
+    function obtenerStadium(){
+        $listadoStadium=$this->db->get('stadium');
+        if ($listadoStadium->num_rows()>0){
+            return $listadoStadium->result();
         } else{
             return false;
         }
@@ -23,16 +23,16 @@
     public function borrar ($id_est){
 
         $this->db->where("id_est",$id_est);
-        return $this->db->delete("estadio");
+        return $this->db->delete("stadium");
 
     }
 
        public function ObtenerporId($id_est)
        {
          $this->db->where("id_est",$id_est);
-         $estadio=$this->db->get("estadio");
-         if ($estadio->num_rows()>0){
-           return $estadio->row();
+         $stadium=$this->db->get("stadium");
+         if ($stadium->num_rows()>0){
+           return $stadium->row();
          }
           return false;
 
@@ -41,7 +41,7 @@
        public function actualizar($id_est,$datos)
        {
          $this->db->where("id_est",$id_est);
-         return $this->db->update("estadio",$datos);
+         return $this->db->update("stadium",$datos);
        }
 
 

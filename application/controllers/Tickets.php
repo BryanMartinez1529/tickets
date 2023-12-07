@@ -11,45 +11,45 @@ class Tickets  extends CI_Controller {
 
     }
 
-	public function nuevo()
+	public function new()
 	{
 		$this->load->view('header');
-		$this->load->view('tickets/nuevo');
+		$this->load->view('tickets/new');
 		$this->load->view('footer');
 	}
 
-	public function listado()
+	public function list()
 	{
         $data['tickets']=$this->Ticket->obtenerTicket();
 		$this->load->view('header');
-		$this->load->view('tickets/listado',$data);
+		$this->load->view('tickets/list',$data);
 		$this->load->view('footer');
 	}
 
-	public function editar($id_ticket)
+	public function edit($id_ticket)
 	{
-        $data['editarTicket']=$this->Ticket->ObtenerporId($id_ticket);
+        $data['editTicket']=$this->Ticket->ObtenerporId($id_ticket);
 		$this->load->view('header');
-		$this->load->view('tickets/editar',$data);
+		$this->load->view('tickets/edit',$data);
 		$this->load->view('footer');
 	}
 
     public function guardar(){
         $datosNuevoTicket  = array (
-            "valor_ticket" =>$this->input->post('valor_ticket'),
-            "hora_ticket"=>$this->input->post('hora_ticket'),
-            "fecha_ticket"=>$this->input->post('fecha_ticket'),
-            "asiento_ticket"=>$this->input->post('asiento_ticket'),
-            "puerta_ingreso"=>$this->input->post('puerta_ingreso'),
-            "cedula_cli"=>$this->input->post('cedula_cli'),
-			      "nombre_equipo"=>$this->input->post('nombre_equipo'),
-		        "nombre_estadio"=>$this->input->post('nombre_estadio'),
+            "worth_ticket" =>$this->input->post('worth_ticket'),
+            "time_ticket"=>$this->input->post('time_ticket'),
+            "date_ticket"=>$this->input->post('date_ticket'),
+            "seat_ticket"=>$this->input->post('seat_ticket'),
+            "door_ingreso"=>$this->input->post('door_ingreso'),
+            "card_cli"=>$this->input->post('card_cli'),
+			      "name_equipo"=>$this->input->post('name_equipo'),
+		        "name_estadio"=>$this->input->post('name_estadio'),
 
         );
 
         if ($this->Ticket->insertar($datosNuevoTicket))
         {
-            redirect ('tickets/listado');
+            redirect ('tickets/list');
         }else {
            echo  "<h1>ERROR</h1>";
         }
@@ -61,7 +61,7 @@ class Tickets  extends CI_Controller {
     {
 
       if ($this->Ticket->borrar($id_ticket)) {
-        redirect('tickets/listado');
+        redirect('tickets/list');
       } else {
         echo "Error";
 
@@ -71,19 +71,19 @@ class Tickets  extends CI_Controller {
 
     public function procesoActualizar(){
         $datosActulizar = array (
-          "valor_ticket" =>$this->input->post('valor_ticket'),
-          "hora_ticket"=>$this->input->post('hora_ticket'),
-          "fecha_ticket"=>$this->input->post('fecha_ticket'),
-          "asiento_ticket"=>$this->input->post('asiento_ticket'),
-          "puerta_ingreso"=>$this->input->post('puerta_ingreso'),
-          "cedula_cli"=>$this->input->post('cedula_cli'),
-		      "nombre_equipo"=>$this->input->post('nombre_equipo'),
-		      "nombre_estadio"=>$this->input->post('nombre_estadio')
+          "worth_ticket" =>$this->input->post('worth_ticket'),
+          "time_ticket"=>$this->input->post('time_ticket'),
+          "date_ticket"=>$this->input->post('date_ticket'),
+          "seat_ticket"=>$this->input->post('seat_ticket'),
+          "door_ingreso"=>$this->input->post('door_ingreso'),
+          "card_cli"=>$this->input->post('card_cli'),
+          "name_equipo"=>$this->input->post('name_equipo'),
+          "name_estadio"=>$this->input->post('name_estadio'),
         );
 
         $id_ticket=$this->input->post("id_ticket");
         if ($this->Ticket->actualizar($id_ticket,$datosActulizar)){
-            redirect ('tickets/listado');
+            redirect ('tickets/list');
         }else {
            echo  "<h1>ERROR</h1>";
         }

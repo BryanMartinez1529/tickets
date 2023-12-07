@@ -1,5 +1,5 @@
 <?php
-  class Equipo extends CI_Model
+  class Team extends CI_Model
   {
 
     function __construct()
@@ -8,13 +8,13 @@
     }
 
     function insertar ($datos){
-        return $this->db->insert('equipo',$datos);
+        return $this->db->insert('team',$datos);
     }
 
-    function obtenerEquipo(){
-        $listadoEquipo=$this->db->get('equipo');
-        if ($listadoEquipo->num_rows()>0){
-            return $listadoEquipo->result();
+    function obtenerTeam(){
+        $listadoTeam=$this->db->get('team');
+        if ($listadoTeam->num_rows()>0){
+            return $listadoTeam->result();
         } else{
             return false;
         }
@@ -23,16 +23,16 @@
     public function borrar ($id_equi){
 
         $this->db->where("id_equi",$id_equi);
-        return $this->db->delete("equipo");
+        return $this->db->delete("team");
 
     }
 
        public function ObtenerporId($id_equi)
        {
          $this->db->where("id_equi",$id_equi);
-         $equipo=$this->db->get("equipo");
-         if ($equipo->num_rows()>0){
-           return $equipo->row();
+         $team=$this->db->get("team");
+         if ($team->num_rows()>0){
+           return $team->row();
          }
           return false;
 
@@ -41,7 +41,7 @@
        public function actualizar($id_equi,$datos)
        {
          $this->db->where("id_equi",$id_equi);
-         return $this->db->update("equipo",$datos);
+         return $this->db->update("team",$datos);
        }
 
 

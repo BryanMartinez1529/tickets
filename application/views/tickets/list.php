@@ -1,20 +1,21 @@
 <br>
 <br>
 <br>
-<h1>Listado de los tickets registrados</h1>
+<h1>
+List of registered tickets</h1>
 <?php if ($tickets): ?>
     <table class="table table-striped table-bordered table-hover" id="tbl_tickets">
      <thead>
         <tr>
           <th>ID</th>
-          <th>VALOR</th>
-          <th>HORA</th>
-          <th>FECHA</th>
-          <th>ASIENTO</th>
-          <th>PUERTAS DE INGRESO</th>
-          <th>CEDULA</th>
-          <th>NOMBRE DEL EQUIPO</th>
-          <th>NOMBRE DEL ESTADIO</th>
+          <th>WORTH</th>
+          <th>TIME</th>
+          <th>DATE</th>
+          <th>SEAT</th>
+          <th>DOOR</th>
+          <th>CARD</th>
+          <th>NAME TEAM</th>
+          <th>NAME STADIUM</th>
           <th>ACCIONES</th>
 
         </tr>
@@ -24,17 +25,17 @@
          <tr>
 
              <td class="text-center"> <?php echo $filaTemporal->id_ticket ?></td>
-             <td> <?php echo $filaTemporal->valor_ticket ?></td>
-             <td> <?php echo $filaTemporal->hora_ticket ?></td>
-             <td> <?php echo $filaTemporal->fecha_ticket?></td>
-             <td> <?php echo $filaTemporal->asiento_ticket ?></td>
-             <td> <?php echo $filaTemporal->puerta_ingreso ?></td>
-             <td> <?php echo $filaTemporal->cedula_cli ?></td>
-             <td> <?php echo $filaTemporal->nombre_equipo ?></td>
-             <td> <?php echo $filaTemporal->nombre_estadio ?></td>
+             <td> <?php echo $filaTemporal->worth_ticket ?></td>
+             <td> <?php echo $filaTemporal->time_ticket ?></td>
+             <td> <?php echo $filaTemporal->date_ticket?></td>
+             <td> <?php echo $filaTemporal->seat_ticket ?></td>
+             <td> <?php echo $filaTemporal->door_ingreso ?></td>
+             <td> <?php echo $filaTemporal->card_cli ?></td>
+             <td> <?php echo $filaTemporal->name_equipo ?></td>
+             <td> <?php echo $filaTemporal->name_estadio ?></td>
 
              <td class="text-center">
-               <a href="<?php echo site_url(); ?>/tickets/editar/<?php echo $filaTemporal->id_ticket; ?>" title="Editar tickets" >
+               <a href="<?php echo site_url(); ?>/tickets/edit/<?php echo $filaTemporal->id_ticket; ?>" title="Editar tickets" >
                  <i class="mdi  mdi-pencil">Editar</i>
                </a>
               &nbsp;&nbsp;

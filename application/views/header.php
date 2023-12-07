@@ -64,38 +64,38 @@
 
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="<?php echo site_url("") ?>" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Inicio</a>
+                    <a href="<?php echo site_url("") ?>" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>MAIN</a>
 
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>CLIENTES</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>CUSTOMERS</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="<?php echo site_url("clientes/nuevo") ?>" class="dropdown-item">NUEVO</a>
-                            <a href="<?php echo site_url("clientes/listado") ?>" class="dropdown-item">LISTADO</a>
+                            <a href="<?php echo site_url("customers/new") ?>" class="dropdown-item">NEW</a>
+                            <a href="<?php echo site_url("customers/list") ?>" class="dropdown-item">LIST</a>
 
                         </div>
                     </div>
 					<div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>TICKETS</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="<?php echo site_url("tickets/nuevo") ?>" class="dropdown-item">NUEVO</a>
-                            <a href="<?php echo site_url("tickets/listado") ?>" class="dropdown-item">LISTADO</a>
+                            <a href="<?php echo site_url("tickets/new") ?>" class="dropdown-item">NEW</a>
+                            <a href="<?php echo site_url("tickets/list") ?>" class="dropdown-item">LIST</a>
 
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>EQUIPOS</a>
+                                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>TEAMS</a>
                                   <div class="dropdown-menu bg-transparent border-0">
-                                      <a href="<?php echo site_url("equipos/nuevo") ?>" class="dropdown-item">NUEVO</a>
-                                      <a href="<?php echo site_url("equipos/listado") ?>" class="dropdown-item">LISTADO</a>
+                                      <a href="<?php echo site_url("teams/new") ?>" class="dropdown-item">NEW</a>
+                                      <a href="<?php echo site_url("teams/list") ?>" class="dropdown-item">LIST</a>
 
                                   </div>
                               </div>
 
                     <div class="nav-item dropdown">
-                                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>ESTADIO</a>
+                                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>STADIUMS</a>
                                   <div class="dropdown-menu bg-transparent border-0">
-                                      <a href="<?php echo site_url("estadios/nuevo") ?>" class="dropdown-item">NUEVO</a>
-                                      <a href="<?php echo site_url("estadios/listado") ?>" class="dropdown-item">LISTADO</a>
+                                      <a href="<?php echo site_url("stadiums/new") ?>" class="dropdown-item">NEW</a>
+                                      <a href="<?php echo site_url("stadiums/list") ?>" class="dropdown-item">LIST</a>
 
                                   </div>
                               </div>
