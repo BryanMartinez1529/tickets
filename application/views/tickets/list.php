@@ -1,3 +1,12 @@
+<?php  
+   $totalTickets=0; 
+   
+    if ($tickets) {
+        $totalTickets=sizeof($tickets);
+    }
+
+?>
+
 <br>
 <br>
 <br>
@@ -8,7 +17,7 @@ List of registered tickets</h1>
      <thead>
         <tr>
           <th>ID</th>
-          <th>WORTH</th>
+          <th>PRICE</th>
           <th>TIME</th>
           <th>DATE</th>
           <th>SEAT</th>
@@ -35,13 +44,13 @@ List of registered tickets</h1>
              <td> <?php echo $filaTemporal->name_estadio ?></td>
 
              <td class="text-center">
-               <a href="<?php echo site_url(); ?>/tickets/edit/<?php echo $filaTemporal->id_ticket; ?>" title="Editar tickets" >
-                 <i class="mdi  mdi-pencil">Editar</i>
+               <a href="<?php echo site_url(); ?>/tickets/edit/<?php echo $filaTemporal->id_ticket; ?>" title="Edit tickets" >
+                 <i class="mdi  mdi-pencil">Edit</i>
                </a>
               &nbsp;&nbsp;
 
-                <a href="<?php echo site_url(); ?>/tickets/eliminar/<?php echo $filaTemporal->id_ticket; ?>" title="Borrar tickets" style="color:red" onclick="return confirm('Esta seguro de borra el registro?');">
-                  <i class="mdi  mdi-close">Eliminar</i>
+                <a href="<?php echo site_url(); ?>/tickets/eliminar/<?php echo $filaTemporal->id_ticket; ?>" title="Delete tickets" style="color:red" onclick="return confirm('Are you sure to delete this record?');">
+                  <i class="mdi  mdi-close">Delete</i>
                 </a>
              </td>
 
@@ -51,8 +60,34 @@ List of registered tickets</h1>
      </tbody>
    </table>
 <?php else: ?>
-  <h1>No existen datos</h1>
+  <h1>There is no data</h1>
 <?php endif; ?>
+
+<br>
+<div class="row">
+  <div class="col-md-5">
+  <div class="card" style="width: 18rem; background-color:black" >              
+      <div class="card-body">
+           <h5 class="card-title">Total Tickets</h5>
+           <?php echo $totalTickets; ?>                                     
+      </div>
+  </div>
+  <br>
+  <div class="card" style="width: 18rem; background-color:black" >              
+      <div class="card-body">
+           <h5 class="card-title">Total Money</h5>
+           $<?php echo $totalMoney; ?>                                     
+      </div>
+  </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $("#tbl_customers")
+    .DataTable();
+</script>
+
+
 
 <script type="text/javascript">
     $("#tbl_tickets")

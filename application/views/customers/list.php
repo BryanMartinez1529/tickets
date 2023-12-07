@@ -1,3 +1,10 @@
+<?php
+  $totalCustomer=0;
+  if ($customers) {
+    $totalCustomer=sizeof($customers);
+  }
+?>
+
 <br>
 <br>
 <br>
@@ -47,6 +54,17 @@
 <?php else: ?>
   <h1>No hay datos que mostrar</h1>
 <?php endif; ?>
+<br>
+<div class="row">
+  <div class="col-md-5">
+  <div class="card" style="width: 18rem; background-color:black" >              
+      <div class="card-body">
+           <h5 class="card-title">Total customers</h5>
+           <?php echo $totalCustomer; ?>                                     
+      </div>
+  </div>
+  </div>
+</div>
 
 <script type="text/javascript">
     $("#tbl_customers")

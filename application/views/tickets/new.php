@@ -9,7 +9,7 @@
 <div class="row g-3">
                     <div class="col-sm-12 col-xl-12">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Formulario</h6>
+                            <h6 class="mb-4">Form</h6>
                             <form method="post" action="<?php echo site_url("/tickets/guardar"); ?>" id="frm_new_ticket">
                               <div class="row">
                                 <div class="col-md-4">
@@ -54,7 +54,7 @@
 
                               </div>
                               <div class="row">
-                                <button type="submit" class="btn btn-dark m-2">Guardar</button>
+                                <button type="submit" class="btn btn-dark m-2">Save</button>
                               </div>
 
                             </form>

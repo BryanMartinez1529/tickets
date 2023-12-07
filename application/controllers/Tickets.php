@@ -20,7 +20,8 @@ class Tickets  extends CI_Controller {
 
 	public function list()
 	{
-        $data['tickets']=$this->Ticket->obtenerTicket();
+    $data['tickets']=$this->Ticket->obtenerTicket();
+    $data['totalMoney']=$this->Ticket->getTotalMoney();
 		$this->load->view('header');
 		$this->load->view('tickets/list',$data);
 		$this->load->view('footer');

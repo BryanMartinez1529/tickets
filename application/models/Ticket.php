@@ -43,6 +43,16 @@
          $this->db->where("id_ticket",$id_ticket);
          return $this->db->update("ticket",$datos);
        }
+       function getTotalMoney(){
+        $sql="SELECT SUM(worth_ticket) AS totalMoney FROM ticket;";
+        $result=$this->db->query($sql);
+        if ($result->num_rows()>0) {
+            return $result->row()->totalMoney;
+        } else {
+            return 0;
+        }
+        
+    }
 
     }   
 

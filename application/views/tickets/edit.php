@@ -7,7 +7,7 @@
 <div class="row g-3">
                     <div class="col-sm-12 col-xl-12">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Formulario</h6>
+                            <h6 class="mb-4">Form</h6>
                             <form method="post" action="<?php echo site_url("/tickets/procesoActualizar"); ?>" id="frm_edit_ticket">
                               <input type="hidden" name="id_ticket" id="id_ticket" value="<?php echo $editTicket->id_ticket ?>" >
                               <div class="row">
@@ -48,7 +48,7 @@
                               </div>
 
                               <div class="row">
-                                <button type="submit" class="btn btn-dark m-2">Guardar</button>
+                                <button type="submit" class="btn btn-dark m-2">Save</button>
                               </div>
 
                             </form>
