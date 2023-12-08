@@ -12,15 +12,15 @@
                               <div class="row">
                                 <div class="col-md-4">
                                     <label for="" class="form-label">Name</label>
-                                    <input type="text"  name="name_equi " class="form-control" placeholder="Ingrese su nombre" id="name_equi " required>
+                                    <input type="text"  name="name_equi " class="form-control" placeholder="enter name" id="name_equi " required>
                                 </div>
                                 <div class="col-md-4">
                                     <label class="form-label">Template</label>
-                                    <input type="text" name="template_equi" placeholder="Ingrese su plantilla" class="form-control" id="template_equi" required>
+                                    <input type="text" name="template_equi" placeholder="Enter Last name" class="form-control" id="template_equi" required>
                                 </div>
 
                               <div class="row">
-                                <button type="submit" class="btn btn-dark m-2">Guardar</button>
+                                <button type="submit" class="btn btn-dark m-2">SAVE</button>
                               </div>
 
                             </form>
