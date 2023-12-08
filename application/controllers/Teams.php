@@ -36,9 +36,8 @@ class Teams  extends CI_Controller {
 
     public function guardar(){
         $datosNuevoTeam  = array (
-            "name_equi" =>$this->input->post('name_equi'),
-            "template_equi"=>$this->input->post('template_equi'),
-
+            "name_equi"=>$this->input->post('name_equi'),
+            "template_equi"=>$this->input->post('template_equi')
         );
 
         if ($this->Team->insertar($datosNuevoTeam))

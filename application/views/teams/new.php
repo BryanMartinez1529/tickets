@@ -12,7 +12,7 @@
                               <div class="row">
                                 <div class="col-md-4">
                                     <label for="" class="form-label">Name</label>
-                                    <input type="text"  name="name_equi " class="form-control" placeholder="enter name" id="name_equi " required>
+                                    <input type="text"  name="name_equi" class="form-control" placeholder="enter name" id="name_equi" required>
                                 </div>
                                 <div class="col-md-4">
                                     <label class="form-label">Template</label>
